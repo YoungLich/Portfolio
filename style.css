@@ -1,0 +1,445 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to left, rgb(35, 34, 37), rgb(56, 52, 65));
+}
+
+header {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Cabeçalho */
+
+.title {
+    position: relative;
+    left: 5vh;
+    top: -1vh;
+    font-size: 40px;
+    font-weight: normal;
+    width: 142px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.link {
+    position: relative;
+    top: -10vh;
+    left: 65vh;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu_lista {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.menu_link {
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.menu_link:hover {
+    color: rgb(220, 56, 253);
+}
+
+/*---------- Final dos Estilos ------------*/
+
+.main {
+    border: 1px solid rgb(164, 66, 255);
+    height: 750vh;
+}
+
+.tamanho {
+    position: relative;
+    font-size: 20px;
+    margin-left: 2vh;
+    margin-top: 20vh;
+    color: rgb(139, 137, 134);
+    font-weight: bold;
+    width: 80px;
+}
+
+.relogio {
+    display: flex;
+    gap: 20px;
+}
+
+.container_title_texto {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    margin-right: 1%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.title_texto {
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%)
+}
+
+.title_texto_destaque {
+    font-size: 2em;
+}
+
+.title_texto_nome {
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+.title_texto_descricao {
+    margin-top: 10%;
+    font-size: 2em;
+}
+
+.title_texto_nome::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/*---------------- Menu da 1 Section ---------------- */
+
+#Menu {
+    position: absolute;
+    margin-top: 90px;
+    width: 100vh;
+}
+
+.title1 {
+    position: relative;
+    color: antiquewhite;
+    top: 25vh;
+    left: 85vh;
+    font-size: 40px;
+    font-weight: bold;
+    width: 192px;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    top: 20vh;
+    left: 40vh;
+}
+
+.img1 {
+    position: relative;
+    background: linear-gradient(to right, #80d6a4, #bf6ee4);
+    width: 400px;
+    top: 5vh;
+    left: 85vh;
+    border: 4px groove rgb(0, 0, 0);
+    border-radius: 300px;
+    box-shadow: 10px 8px 15px 8px black;
+}
+
+.text1 {
+    position: relative;
+    width: 250px;
+    top: 7vh;
+    left: 100vh;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.text2 {
+    position: relative;
+    color: antiquewhite;
+    top: -60vh;
+    left: -25vh;
+    font-size: 30px;
+    width: 580px;
+}
+
+.subtext {
+    position: relative;
+    left: 93vh;
+    top: 7vh;
+    width: 350px;
+    font-style: italic;
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+/*---------------- Fim da 1 Section Style --------------*/
+
+#Project {
+    position: absolute;
+    margin-top: 190vh;
+    width: 100vh;
+}
+
+.title2 {
+    position: relative;
+    left: 90vh;
+    top: 20vh;
+    font-size: 40px;
+    color: antiquewhite;
+    width: 142px;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    gap: -80px;
+    width: 100vh;
+    top: 29vh;
+    left: 3vh;
+}
+
+.project1 {
+    position: relative;
+    left: 30vh;
+    width: 300px;
+    border: 6px groove rgb(146, 153, 153);
+    border-radius: 10px;
+}
+
+.project2 {
+    position: relative;
+    left: 50vh;
+    width: 300px;
+    border: 6px groove rgb(63, 51, 51);
+    border-radius: 10px;
+}
+
+.project3 {
+    position: relative;
+    left: -105vh;
+    top: 50vh;
+    width: 300px;
+    border: 6px groove rgb(146, 153, 153);
+    border-radius: 10px;
+}
+
+.project4 {
+    position: relative;
+    left: -84vh;
+    top: 50vh;
+    width: 310px;
+    border: 6px groove rgb(63, 51, 51);
+    border-radius: 10px;
+}
+
+.repo1 {
+    position: relative;
+    top: 35vh;
+    left: -5vh;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.4s ease;
+}
+
+.repo2 {
+    position: relative;
+    top: 35vh;
+    left: 15vh;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.4s ease;
+}
+
+.repo3 {
+    position: relative;
+    top: 85vh;
+    left: -140vh;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.4s ease;
+}
+
+.repo4 {
+    position: relative;
+    top: 85vh;
+    left: -118vh;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.4s ease;
+}
+
+a:hover {
+    color: #bf6ee4;
+}
+
+/*---------------------- Fim da Section "Projetos" ------------------*/
+
+#Formation {
+    position: absolute;
+    margin-top: 370vh;
+    width: 100vh;
+}
+
+.formations {
+    position: relative;
+    left: 80vh;
+}
+
+.title3 {
+    position: relative;
+    left: -6vh;
+    font-size: 40px;
+    color: antiquewhite;
+    width: 370px;
+}
+
+.diploma {
+    position: relative;
+    width: 600px;
+    left: -25vh;
+    top: -2vh;
+    border: 7px groove rgb(185, 158, 4);
+    box-shadow: -3px 4px 30px 10px rgb(14, 14, 17);
+}
+
+.cursos {
+    position: absolute;
+    margin-top: 10vh;
+}
+
+.subtitle3 {
+    position: relative;
+    left: 10vh;
+    font-size: 50px;
+    color: antiquewhite;
+    width: 150px;
+}
+
+.certificados {
+    position: relative;
+    width: 300px;
+    display: flexbox;
+    margin: 20px;
+    left: -5vh;
+    border: 6px groove rgb(121, 120, 118);
+}
+
+/*------------------- Fim da Section "formações" -------------------*/
+
+#Contato {
+    position: absolute;
+    margin-top: 600vh;
+    width: 100vh;
+}
+
+.title4 {
+    position: relative;
+    left: 90vh;
+    font-size: 40px;
+    color: antiquewhite;
+    width: 155px;
+}
+
+.linkedin,
+.github,
+.instagram,
+.whatsapp {
+    width: 200px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.linkedin:hover,
+.github:hover,
+.whatsapp:hover,
+.instagram:hover {
+    border: 1px solid rgb(168, 160, 160);
+    box-shadow: 2px 8px 25px 5px rgb(111, 58, 160);
+    background: rgb(73, 22, 121);
+    border-radius: 20px;
+}
+
+.whatsapp {
+    border: 1px solid black;
+    border-radius: 80px;
+}
+
+.contatos {
+    position: relative;
+    left: 25vh;
+    top: 20vh;
+    display: flex;
+    gap: 70px;
+}
+
+footer {
+    position: absolute;
+}
+
+.title5 {
+    position: relative;
+    left: 85vh;
+    color: rgb(212, 70, 224);
+}
+
+.text3 {
+    position: relative;
+    left: 60vh;
+    color: antiquewhite;
+}
+
+.text4 {
+    position: relative;
+    left: 92vh;
+    color: rgb(207, 179, 209);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: antiquewhite;
+    background: transparent;
+    border: 1px solid antiquewhite;
+    border-radius: 100px;
+    cursor: pointer;
+}
