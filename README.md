@@ -3,5 +3,6 @@
 </div>
 <hr>
 <div align="center"
-<p><i>Site feito com HTML | CSS | JavaScript</i></p>
+<p><i>Site feito com HTML | CSS | JavaScript</i></p><br>
+<img src="site.png" width="800px">
 </div>
