@@ -1,93 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --color1: rgb(15, 201, 15);
+    --color2: rgb(2, 2, 2);
+    --color3: rgb(19, 31, 71);
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(to left, rgb(35, 34, 37), rgb(56, 52, 65));
-}
-
-header {
-    position: absolute;
+    background: var(--color2);
     margin: 0;
     padding: 0;
 }
 
+.cabeçalho {
+    margin: 0;
+    width: 100%;
+    min-width: 700px;
+    max-width: 1368px;
+    height: 70px;
+    max-height: 100px;
+}
+
 /* Estilos Cabeçalho */
 
+.tit1 {
+    margin-top: 2%;
+    margin-left: -1%;
+}
+
 .title {
-    position: relative;
-    left: 5vh;
-    top: -1vh;
+    margin-top: 20px;
+    margin-left: 30px;
     font-size: 40px;
     font-weight: normal;
-    width: 142px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: antiquewhite;
-    border: 1px solid antiquewhite;
+    color: var(--color1);
+}
+
+.list1 {
+    margin: -4% auto;
 }
 
 .link {
-    position: relative;
-    top: -10vh;
-    left: 65vh;
+    margin-top: -4%;
     display: flex;
+    justify-content: center;
     list-style: none;
     gap: 30px;
 }
 
 .menu_lista {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
+    display: inline-block;
 }
 
 .menu_link {
-    color: antiquewhite;
+    color: var(--color1);
     text-decoration: none;
     transition: 0.2s ease;
     cursor: pointer;
 }
 
 .menu_link:hover {
-    color: rgb(220, 56, 253);
+    color: rgb(116, 255, 24);
 }
 
 /*---------- Final dos Estilos ------------*/
 
 .main {
-    border: 1px solid rgb(164, 66, 255);
-    height: 750vh;
+    border: 1px solid transparent;
 }
 
 .tamanho {
-    position: relative;
-    font-size: 20px;
-    margin-left: 2vh;
-    margin-top: 20vh;
-    color: rgb(139, 137, 134);
+    font-size: 25px;
+    margin-left: 82%;
+    margin-top: 3%;
+    color: var(--color1);
+    font-family: "Press Start 2P", system-ui;
     font-weight: bold;
     width: 80px;
 }
 
 .relogio {
     display: flex;
-    gap: 20px;
+    gap: 1px;
 }
 
 .container_title_texto {
-    position: relative;
+    margin-left: 50%;
+    margin-top: 7%;
     height: 35vh;
     width: 100%;
     margin-right: 1%;
     text-align: center;
-    color: antiquewhite;
+    color: var(--color1);
 }
 
 .title_texto {
     width: 100%;
     height: 25vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: auto;
     text-align: center;
     transform: translate(-50%, -50%)
 }
@@ -102,7 +121,7 @@ header {
 }
 
 .title_texto_descricao {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 2em;
 }
 
@@ -130,249 +149,174 @@ header {
 /*---------------- Menu da 1 Section ---------------- */
 
 #Menu {
-    position: absolute;
-    margin-top: 90px;
-    width: 100vh;
+    margin: 140px auto;
+    width: 100%;
+    max-width: 1368px;
+    min-width: 700px;
 }
 
 .title1 {
-    position: relative;
-    color: antiquewhite;
-    top: 25vh;
-    left: 85vh;
+    color: var(--color1);
+    margin-left: 42%;
     font-size: 40px;
     font-weight: bold;
     width: 192px;
 }
 
 .container {
-    position: relative;
-    width: 200px;
-    top: 20vh;
-    left: 40vh;
+    width: 100%;
+    margin: auto;
 }
 
 .img1 {
-    position: relative;
     background: linear-gradient(to right, #80d6a4, #bf6ee4);
-    width: 400px;
-    top: 5vh;
-    left: 85vh;
+    width: 250px;
+    margin-left: 65%;
     border: 4px groove rgb(0, 0, 0);
-    border-radius: 300px;
+    border-radius: 20%;
     box-shadow: 10px 8px 15px 8px black;
 }
 
 .text1 {
-    position: relative;
     width: 250px;
-    top: 7vh;
-    left: 100vh;
+    margin-left: 67%;
     font-size: 30px;
-    color: antiquewhite;
-}
-
-.text2 {
-    position: relative;
-    color: antiquewhite;
-    top: -60vh;
-    left: -25vh;
-    font-size: 30px;
-    width: 580px;
+    color: var(--color1);
 }
 
 .subtext {
-    position: relative;
-    left: 93vh;
-    top: 7vh;
+    margin-left: 64%;
     width: 350px;
     font-style: italic;
     font-size: 20px;
-    color: antiquewhite;
+    color: rgb(221, 209, 36);
+}
+
+
+.text2 {
+    color: rgb(215, 240, 215);
+    margin-left: 8%;
+    margin-top: -30%;
+    font-size: 35px;
+    width: 620px;
+    background: linear-gradient(to top, transparent, #165e34, #238528, #121a08);
+    border-radius: 25px;
 }
 
 /*---------------- Fim da 1 Section Style --------------*/
 
 #Project {
-    position: absolute;
-    margin-top: 190vh;
-    width: 100vh;
+    margin: 20% auto;
+    width: 100%;
+    max-height: 1000px;
+    height: 900px;
 }
 
 .title2 {
-    position: relative;
-    left: 90vh;
-    top: 20vh;
+    margin-top: 25%;
+    margin-left: 43%;
     font-size: 40px;
-    color: antiquewhite;
+    color: var(--color1);
     width: 142px;
 }
 
 .container2 {
-    position: relative;
-    display: flex;
-    gap: -80px;
-    width: 100vh;
-    top: 29vh;
-    left: 3vh;
+    width: 100%;
+    margin-top: 40%;
+    margin-left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.project1 {
-    position: relative;
-    left: 30vh;
-    width: 300px;
-    border: 6px groove rgb(146, 153, 153);
-    border-radius: 10px;
+.container2 img,
+.container2 a {
+    display: block;
+    margin: 2% auto;
 }
 
-.project2 {
-    position: relative;
-    left: 50vh;
-    width: 300px;
-    border: 6px groove rgb(63, 51, 51);
-    border-radius: 10px;
-}
-
+.project1,
+.project2,
 .project3 {
-    position: relative;
-    left: -105vh;
-    top: 50vh;
-    width: 300px;
+    width: 400px;
     border: 6px groove rgb(146, 153, 153);
     border-radius: 10px;
 }
 
-.project4 {
-    position: relative;
-    left: -84vh;
-    top: 50vh;
-    width: 310px;
-    border: 6px groove rgb(63, 51, 51);
-    border-radius: 10px;
-}
-
-.repo1 {
-    position: relative;
-    top: 35vh;
-    left: -5vh;
+.link1,
+.link2,
+.link3 {
     border: 1px solid transparent;
     border-radius: 30px;
-    height: 30px;
     font-size: 25px;
+    font-family: "Press Start 2P", system-ui;
     text-decoration: none;
-    color: antiquewhite;
-    transition: 0.4s ease;
-}
-
-.repo2 {
-    position: relative;
-    top: 35vh;
-    left: 15vh;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    height: 30px;
-    font-size: 25px;
-    text-decoration: none;
-    color: antiquewhite;
-    transition: 0.4s ease;
-}
-
-.repo3 {
-    position: relative;
-    top: 85vh;
-    left: -140vh;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    height: 30px;
-    font-size: 25px;
-    text-decoration: none;
-    color: antiquewhite;
-    transition: 0.4s ease;
-}
-
-.repo4 {
-    position: relative;
-    top: 85vh;
-    left: -118vh;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    height: 30px;
-    font-size: 25px;
-    text-decoration: none;
-    color: antiquewhite;
-    transition: 0.4s ease;
+    color: var(--color1);
+    transition: 0.2s ease;
 }
 
 a:hover {
-    color: #bf6ee4;
+    color: #d8d51a;
 }
 
 /*---------------------- Fim da Section "Projetos" ------------------*/
 
 #Formation {
-    position: absolute;
-    margin-top: 370vh;
-    width: 100vh;
+    margin: 15% auto;
+    width: 100%;
+    height: 500px;
+    max-height: 600px;
 }
 
 .formations {
-    position: relative;
-    left: 80vh;
+    display: inline-block;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 25%;
 }
 
 .title3 {
-    position: relative;
-    left: -6vh;
+    margin: 5% auto;
+    text-align: center;
     font-size: 40px;
-    color: antiquewhite;
-    width: 370px;
+    color: var(--color1);
 }
 
 .diploma {
-    position: relative;
+    margin: auto;
     width: 600px;
-    left: -25vh;
-    top: -2vh;
-    border: 7px groove rgb(185, 158, 4);
-    box-shadow: -3px 4px 30px 10px rgb(14, 14, 17);
+    border: 6px groove rgb(95, 177, 95);
+    box-shadow: 4px 6px 15px 2px rgb(40, 83, 40);
 }
 
-.cursos {
-    position: absolute;
-    margin-top: 10vh;
-}
-
-.subtitle3 {
-    position: relative;
-    left: 10vh;
-    font-size: 50px;
-    color: antiquewhite;
-    width: 150px;
-}
-
-.certificados {
-    position: relative;
-    width: 300px;
-    display: flexbox;
-    margin: 20px;
-    left: -5vh;
-    border: 6px groove rgb(121, 120, 118);
-}
 
 /*------------------- Fim da Section "formações" -------------------*/
 
 #Contato {
-    position: absolute;
-    margin-top: 600vh;
-    width: 100vh;
+    margin: 10% auto;
+    width: 100%;
+    height: 500px;
+    max-width: 1380px;
+    min-height: 200px;
+}
+
+.contatos {
+    margin: 10px;
+    display: inline-block;
+    margin-left: 18%;
+    gap: 10px;
 }
 
 .title4 {
-    position: relative;
-    left: 90vh;
+    margin: 20% auto;
+    text-align: center;
     font-size: 40px;
-    color: antiquewhite;
+    color: var(--color1);
     width: 155px;
+}
+
+.container3 {
+    margin-top: -5%;
+    text-align: center;
 }
 
 .linkedin,
@@ -389,10 +333,10 @@ a:hover {
 .github:hover,
 .whatsapp:hover,
 .instagram:hover {
-    border: 1px solid rgb(168, 160, 160);
-    box-shadow: 2px 8px 25px 5px rgb(111, 58, 160);
-    background: rgb(73, 22, 121);
-    border-radius: 20px;
+    border: 1px solid transparent;
+    box-shadow: 1px 4px 25px 5px rgb(52, 124, 52);
+    background-color: #4b802f;
+    border-radius: 20%;
 }
 
 .whatsapp {
@@ -400,34 +344,27 @@ a:hover {
     border-radius: 80px;
 }
 
-.contatos {
-    position: relative;
-    left: 25vh;
-    top: 20vh;
-    display: flex;
-    gap: 70px;
-}
+/*------------------- Fim da Section "contatos" -------------------*/
 
-footer {
-    position: absolute;
+.rodape {
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .title5 {
-    position: relative;
     left: 85vh;
-    color: rgb(212, 70, 224);
+    color: var(--color1);
 }
 
 .text3 {
-    position: relative;
     left: 60vh;
-    color: antiquewhite;
+    color: var(--color1);
 }
 
 .text4 {
-    position: relative;
     left: 92vh;
-    color: rgb(207, 179, 209);
+    color: var(--color1);
 }
 
 #back-to-top {
@@ -437,9 +374,9 @@ footer {
     width: 40px;
     height: 40px;
     font-size: 30px;
-    color: antiquewhite;
+    color: var(--color1);
     background: transparent;
-    border: 1px solid antiquewhite;
+    border: 1px solid var(--color1);
     border-radius: 100px;
     cursor: pointer;
 }
