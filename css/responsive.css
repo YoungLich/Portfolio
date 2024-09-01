@@ -1,0 +1,183 @@
+@media (max-width: 880px) {
+
+    /* Estilo para dispositivos móveis (Cabeçalho)*/
+
+    .cabeçalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Estilos Cabeçalho */
+
+    .tit1 {
+        margin-left: -15%;
+    }
+
+    .list1 {
+        margin: 0;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin-left: -35%;
+        list-style: none;
+        align-items: center;
+    }
+
+    .menu_lista {
+        margin: 0;
+    }
+
+    .menu_link {
+        text-decoration: none;
+        font-size: 35px;
+    }
+
+    /* Ajustando o texto com efeito de máquina de escrever para aparecer abaixo dos links */
+
+    .title_texto_destaque {
+        margin-top: 150px;
+        font-size: 25px;
+        margin-left: -20px;
+    }
+
+    .title_texto {
+        width: 400px;
+        margin-top: 400px;
+        font-size: 15px;
+        margin-left: -30px;
+    }
+
+    .title_texto_descricao {
+        margin-left: 10px;
+    }
+
+    /* Estilo para o Relógio Digital */
+
+    .relogio {
+        display: flex;
+        justify-content: flex-start;
+        /* Mantém o relógio à esquerda */
+        align-items: center;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 0;
+        /* Remove qualquer deslocamento adicional */
+        width: 100%;
+        /* Ocupa toda a largura do container */
+        padding-left: 20px;
+        /* Adiciona espaçamento à esquerda */
+    }
+
+    .relogio div {
+        margin: 0 5px;
+    }
+
+    .relogio #horas,
+    .relogio #minutos,
+    .relogio #segundos {
+        font-size: 1em;
+    }
+
+    .relogio span {
+        font-size: 0.7em;
+    }
+
+    /* Estilo para dispositivos móveis (Section Projetos)*/
+
+    #Project {
+        width: 100%;
+        height: 650px;
+    }
+
+    .container2 {
+        width: 100%;
+        margin-top: 40%;
+        margin-left: 48%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container2 img,
+    .container2 a {
+        display: block;
+        margin: 2% auto;
+    }
+
+    .title2 {
+        margin-top: 25%;
+        margin-left: 43%;
+        font-size: 40px;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        width: 280px;
+        margin-left: -80px;
+    }
+
+    /* Estilo para dispositivos móveis (Section Formações)*/
+
+    .title3 {
+        margin-left: -15px;
+        font-size: 35px;
+    }
+
+    .diploma {
+        margin-left: -10px;
+        width: 300px;
+    }
+
+    /* Estilo para dispositivos móveis (Section Contatos)*/
+
+    #Contato {
+        height: 1500px;
+    }
+
+    .title4 {
+        margin-top: 10px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkedin,
+    .github,
+    .instagram,
+    .whatsapp {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+
+    /* Estilo para dispositivos móveis(Footer) */
+    .rodape {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title5 {
+        width: 300px;
+        margin-left: 27%;
+    }
+
+    .text3 {
+        width: 300px;
+        margin-left: 27%;
+    }
+
+    .text4 {
+        width: 300px;
+        margin-left: 27%;
+    }
+}

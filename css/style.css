@@ -21,10 +21,7 @@ body {
 .cabeçalho {
     margin: 0;
     width: 100%;
-    min-width: 700px;
-    max-width: 1368px;
     height: 70px;
-    max-height: 100px;
 }
 
 /* Estilos Cabeçalho */
@@ -173,7 +170,7 @@ body {
     width: 250px;
     margin-left: 65%;
     border: 4px groove rgb(0, 0, 0);
-    border-radius: 20%;
+    border-radius: 10%;
     box-shadow: 10px 8px 15px 8px black;
 }
 
@@ -194,13 +191,13 @@ body {
 
 
 .text2 {
-    color: rgb(215, 240, 215);
+    color: rgb(0, 0, 0);
     margin-left: 8%;
     margin-top: -30%;
     font-size: 35px;
     width: 620px;
-    background: linear-gradient(to top, transparent, #165e34, #238528, #121a08);
-    border-radius: 25px;
+    background: linear-gradient(to left, transparent, #506be4, #c0be2a, #c8ca2d);
+    border-radius: 10px;
 }
 
 /*---------------- Fim da 1 Section Style --------------*/
@@ -209,12 +206,13 @@ body {
     margin: 20% auto;
     width: 100%;
     max-height: 1000px;
-    height: 900px;
+    height: 850px;
 }
 
 .title2 {
     margin-top: 25%;
-    margin-left: 43%;
+    margin-left: 42%;
+    text-align: center;
     font-size: 40px;
     color: var(--color1);
     width: 142px;
@@ -264,7 +262,7 @@ a:hover {
     margin: 15% auto;
     width: 100%;
     height: 500px;
-    max-height: 600px;
+    max-height: 510px;
 }
 
 .formations {
@@ -276,14 +274,14 @@ a:hover {
 
 .title3 {
     margin: 5% auto;
-    text-align: center;
+    margin-left: 23%;
     font-size: 40px;
     color: var(--color1);
 }
 
 .diploma {
-    margin: auto;
-    width: 600px;
+    margin-left: 5%;
+    width: 550px;
     border: 6px groove rgb(95, 177, 95);
     box-shadow: 4px 6px 15px 2px rgb(40, 83, 40);
 }
@@ -294,9 +292,7 @@ a:hover {
 #Contato {
     margin: 10% auto;
     width: 100%;
-    height: 500px;
-    max-width: 1380px;
-    min-height: 200px;
+    height: 470px;
 }
 
 .contatos {
@@ -307,8 +303,8 @@ a:hover {
 }
 
 .title4 {
-    margin: 20% auto;
-    text-align: center;
+    margin: 14% auto;
+    margin-left: 43%;
     font-size: 40px;
     color: var(--color1);
     width: 155px;
