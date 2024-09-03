@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const theme = localStorage.getItem('theme') || './css/style.css';
     themeStylesheet.setAttribute('href', theme);
 
-    if (theme.includes('themewhite.css')) {
+    if (theme.includes('./css/themewhite.css')) {
         darkIcon.style.display = 'none';
         lightIcon.style.display = 'block';
     } else {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTheme = themeStylesheet.getAttribute('href');
         let newTheme;
 
-        if (currentTheme.includes('style.css')) {
+        if (currentTheme.includes('./css/style.css')) {
             newTheme = './css/themewhite.css';
             darkIcon.style.display = 'none';
             lightIcon.style.display = 'block';
