@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeStylesheet = document.getElementById('theme-stylesheet');
 
     // Verifica o tema salvo no localStorage e define o tema e ícones apropriados
-    const theme = localStorage.getItem('theme') || 'css/style.css';
+    const theme = localStorage.getItem('theme') || './css/style.css';
     themeStylesheet.setAttribute('href', theme);
 
     if (theme.includes('themewhite.css')) {
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let newTheme;
 
         if (currentTheme.includes('style.css')) {
-            newTheme = 'css/themewhite.css';
+            newTheme = './css/themewhite.css';
             darkIcon.style.display = 'none';
             lightIcon.style.display = 'block';
         } else {
-            newTheme = 'css/style.css';
+            newTheme = './css/style.css';
             darkIcon.style.display = 'block';
             lightIcon.style.display = 'none';
         }
