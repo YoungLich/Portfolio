@@ -45,10 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeStylesheet = document.getElementById('theme-stylesheet');
 
     // Verifica o tema salvo no localStorage e define o tema e ícones apropriados
-    const theme = localStorage.getItem('theme') || './css/style.css';
-    themeStylesheet.setAttribute('href', theme);
+    const savedTheme = localStorage.getItem('theme') || 'css/style.css';
+    themeStylesheet.setAttribute('href', savedTheme);
 
-    if (theme.includes('./css/themewhite.css')) {
+    // Atualiza os ícones com base no tema atual
+    if (savedTheme.includes('themewhite.css')) {
         darkIcon.style.display = 'none';
         lightIcon.style.display = 'block';
     } else {
@@ -61,12 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTheme = themeStylesheet.getAttribute('href');
         let newTheme;
 
-        if (currentTheme.includes('./css/style.css')) {
-            newTheme = './css/themewhite.css';
+        if (currentTheme.includes('style.css')) {
+            newTheme = 'css/themewhite.css';
             darkIcon.style.display = 'none';
             lightIcon.style.display = 'block';
         } else {
-            newTheme = './css/style.css';
+            newTheme = 'css/style.css';
             darkIcon.style.display = 'block';
             lightIcon.style.display = 'none';
         }
