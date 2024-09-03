@@ -5,9 +5,9 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/responsive.css'>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/icon.ico">
+    <link rel='stylesheet' id="theme-stylesheet" media='screen' href='/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/responsive.css'>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/icon.ico">
     <title>Portfólio | Gabriel</title>
 </head>
 
@@ -15,6 +15,7 @@
     <!-- Cabeçalho -->
 
     <header class="cabeçalho">
+
         <div class="tit1">
             <h1 class="title">Portfólio</h1>
         </div>
@@ -28,7 +29,13 @@
                 </ul>
             </div>
         </nav>
+
     </header>
+
+    <button id="theme-toggle">
+        <img src="./assets/image/Dark_Moon.png" id="dark-icon" class="theme-icon">
+        <img src="./assets/image/Light_Moon.png" id="light-icon" class="theme-icon" style="display: none;">
+    </button>
 
     <!-- Principal -->
     <main class="main">
@@ -122,6 +129,7 @@
             Eduardo Gabriel Proença de Carvalho</p>
         <p class="text4">São Paulo | Brazil</p>
     </footer>
+
 
     <script src="/js/script.js"></script>
 </body>

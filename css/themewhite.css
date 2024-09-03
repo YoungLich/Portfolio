@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --color1: rgb(15, 201, 15);
+    --color1: rgb(0, 0, 0);
     /* Cores de Texto */
-    --color2: rgb(2, 2, 2);
+    --color2: rgb(197, 197, 197);
     /* Cor do Background */
     --color3: rgb(19, 31, 71);
 }
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: var(--color2);
+    background: linear-gradient(to left, #70b2e7, #c2c0b6);
     max-width: 1200px;
     /* Largura máxima do body */
     margin: 0 auto;
@@ -43,7 +43,6 @@ body {
     margin-left: -1%;
 }
 
-
 .title {
     margin-top: 20px;
     margin-left: 30px;
@@ -65,7 +64,6 @@ body {
     gap: 30px;
 }
 
-/* Estilo do botão de troca de tema */
 #theme-toggle {
     margin-left: 60px;
     margin-top: 5px;
@@ -96,7 +94,7 @@ body {
 }
 
 .menu_link:hover {
-    color: rgb(116, 255, 24);
+    color: rgb(6, 156, 226);
 }
 
 /*---------- Final dos Estilos ------------*/
@@ -213,7 +211,7 @@ body {
     width: 350px;
     font-style: italic;
     font-size: 20px;
-    color: rgb(221, 209, 36);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -223,7 +221,7 @@ body {
     margin-top: -30%;
     font-size: 35px;
     width: 620px;
-    background: linear-gradient(to top, transparent, #c4872b, #a3a121, #f5f859);
+    background: linear-gradient(to top, transparent, #a1b1c0, #54a0e7, #5557e7);
     border-radius: 10px;
 }
 
@@ -308,8 +306,8 @@ a:hover {
     margin-top: 5%;
     margin-left: 5%;
     width: 550px;
-    border: 6px groove rgb(95, 177, 95);
-    box-shadow: 4px 6px 15px 2px rgb(40, 83, 40);
+    border: 6px groove rgb(0, 0, 0);
+    box-shadow: 4px 6px 15px 2px rgb(14, 26, 14);
 }
 
 
@@ -355,8 +353,8 @@ a:hover {
 .whatsapp:hover,
 .instagram:hover {
     border: 1px solid transparent;
-    box-shadow: 1px 4px 25px 5px rgb(52, 124, 52);
-    background-color: #4b802f;
+    box-shadow: 1px 4px 25px 5px rgb(37, 127, 143);
+    background-color: #1d5583;
     border-radius: 20%;
 }
 

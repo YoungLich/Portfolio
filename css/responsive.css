@@ -1,7 +1,50 @@
-@media (max-width: 880px) {
+/* Garantir que o conteúdo preencha a tela em resoluções menores */
+@media (max-width: 1360px) {
+    body {
+        max-width: 100%;
+        /* O body ocupa 100% da largura disponível */
+        padding: 0 15px;
+        /* Ajusta o padding para criar um espaçamento nas laterais */
+    }
+}
 
-    /* Estilo para dispositivos móveis (Cabeçalho)*/
+@media (max-width: 1080px) {
 
+    /* Ajustar o botão de rolagem para cima */
+    .back-to-top {
+        position: fixed;
+        bottom: 80px;
+        /* Ajusta a distância do botão em relação ao fundo da tela */
+        left: 50%;
+        /* Alinha o botão horizontalmente ao centro */
+        transform: translateX(-50%);
+        /* Centraliza o botão com base na sua largura */
+        background-color: #000;
+        /* Cor de fundo do botão */
+        color: #fff;
+        /* Cor do texto do botão */
+        padding: 10px 15px;
+        /* Padding do botão */
+        border-radius: 5px;
+        /* Arredondar as bordas do botão */
+        cursor: pointer;
+        z-index: 1000;
+        /* Garante que o botão fique por cima de outros elementos */
+    }
+
+    .title {
+        margin: auto;
+        text-align: center;
+    }
+
+    #theme-toggle {
+        display: block;
+        margin: 20px auto;
+        /* Margem para espaçamento */
+        text-align: center;
+    }
+
+    /* Cabeçalho */
     .cabeçalho {
         display: flex;
         flex-direction: column;
@@ -9,28 +52,14 @@
         text-align: center;
     }
 
-    /* Estilos Cabeçalho */
-
-    .tit1 {
-        margin-left: -15%;
-    }
-
-    .list1 {
-        margin: 0;
-    }
-
     .link {
+        margin-top: 80%;
         display: flex;
         flex-direction: column;
         gap: 10px;
         padding: 0;
-        margin-left: -35%;
         list-style: none;
         align-items: center;
-    }
-
-    .menu_lista {
-        margin: 0;
     }
 
     .menu_link {
@@ -38,40 +67,45 @@
         font-size: 35px;
     }
 
-    /* Ajustando o texto com efeito de máquina de escrever para aparecer abaixo dos links */
+    /* Texto com efeito de máquina de escrever */
+
+    .container_title_texto {
+        margin-top: 5%;
+    }
 
     .title_texto_destaque {
         margin-top: 150px;
         font-size: 25px;
-        margin-left: -20px;
+        text-align: center;
     }
 
     .title_texto {
-        width: 400px;
+        width: 100%;
         margin-top: 400px;
         font-size: 15px;
-        margin-left: -30px;
+        text-align: center;
     }
 
     .title_texto_descricao {
-        margin-left: 10px;
+        margin-top: 10px;
+        text-align: center;
     }
 
-    /* Estilo para o Relógio Digital */
+    /* Relógio Digital */
+
+    .tamanho {
+        margin: auto;
+        text-align: center;
+    }
 
     .relogio {
         display: flex;
-        justify-content: flex-start;
-        /* Mantém o relógio à esquerda */
+        justify-content: center;
+        /* Centraliza o relógio */
         align-items: center;
         font-size: 15px;
         margin-top: 10px;
-        margin-left: 0;
-        /* Remove qualquer deslocamento adicional */
         width: 100%;
-        /* Ocupa toda a largura do container */
-        padding-left: 20px;
-        /* Adiciona espaçamento à esquerda */
     }
 
     .relogio div {
@@ -88,18 +122,55 @@
         font-size: 0.7em;
     }
 
-    /* Estilo para dispositivos móveis (Section Projetos)*/
+    /* Section Sobre Mim */
 
+    #Menu {
+        min-height: 1500px;
+        max-height: 1700px;
+    }
+
+    .title1 {
+        margin: auto;
+        text-align: center;
+    }
+
+    .img1 {
+        width: 250px;
+        display: block;
+        margin: 20px auto;
+        /* Centraliza e adiciona margem ao redor */
+    }
+
+    .text1,
+    .subtext,
+    .text2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+        /* Evita que o texto encoste nas bordas */
+    }
+
+    .text2 {
+        width: 80%;
+        margin-top: 15%;
+    }
+
+    /* Section Projetos */
     #Project {
         width: 100%;
-        height: 650px;
+        height: auto;
+        /* Ajusta a altura conforme o conteúdo */
+    }
+
+    .title2 {
+        margin-top: -180px;
+        font-size: 40px;
+        text-align: center;
     }
 
     .container2 {
         width: 100%;
-        margin-top: 40%;
-        margin-left: 48%;
-        transform: translate(-50%, -50%);
+        margin-top: 400px;
         text-align: center;
     }
 
@@ -107,77 +178,170 @@
     .container2 a {
         display: block;
         margin: 2% auto;
+        max-width: 100%;
+        /* Assegura que as imagens não ultrapassem a largura do container */
     }
 
-    .title2 {
-        margin-top: 25%;
-        margin-left: 43%;
-        font-size: 40px;
-    }
 
     .project1,
     .project2,
     .project3 {
-        width: 280px;
-        margin-left: -80px;
+        width: 80%;
+        /* Ajusta a largura para 80% do container */
+        display: block;
+        margin: 20px auto;
+        /* Centraliza as imagens */
+        max-width: 280px;
+        /* Limita o tamanho máximo das imagens */
     }
 
-    /* Estilo para dispositivos móveis (Section Formações)*/
+    /* Section Formações */
+
+    .formations {
+        margin: auto;
+        align-items: center;
+    }
 
     .title3 {
-        margin-left: -15px;
-        font-size: 35px;
+        font-size: 2em;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .diploma {
-        margin-left: -10px;
-        width: 300px;
+        min-width: 340px;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
     }
 
-    /* Estilo para dispositivos móveis (Section Contatos)*/
+    /* Textos centralizados */
+    .subtext,
+    .text1,
+    .text2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 80%;
+    }
+
+    /* Seção de Contatos */
 
     #Contato {
-        height: 1500px;
+        min-height: 750px;
+        max-height: 850px;
     }
 
-    .title4 {
-        margin-top: 10px;
-        font-size: 35px;
+    .contatos {
+        min-height: 800px;
+        max-height: 950px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .linkedin,
     .github,
     .instagram,
     .whatsapp {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
+        width: 120px;
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        /* Centraliza as imagens e adiciona espaço ao redor */
     }
 
-    /* Estilo para dispositivos móveis(Footer) */
+    /* Footer */
+    .rodape {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .title5,
+    .text3,
+    .text4 {
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+/* Estilo para dispositivos entre 412px e 1280px */
+@media (min-width: 412px) and (max-width: 1280px) {
+
+    .title3 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .diploma {
+        width: 80%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .subtext,
+    .text1,
+    .text2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 80%;
+    }
+
+    .linkedin,
+    .github,
+    .instagram,
+    .whatsapp {
+        width: 130px;
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        /* Centraliza as imagens e adiciona espaço ao redor */
+    }
+
     .rodape {
         margin: auto;
-        width: 100%;
         text-align: center;
+        padding: 20px 0;
     }
 
-    .title5 {
-        width: 300px;
-        margin-left: 27%;
-    }
-
-    .text3 {
-        width: 300px;
-        margin-left: 27%;
-    }
-
+    .title5,
+    .text3,
     .text4 {
-        width: 300px;
-        margin-left: 27%;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* Ajustar o botão de rolagem para cima */
+    .back-to-top {
+        position: fixed;
+        bottom: 400px;
+        /* Ajusta a distância do botão em relação ao fundo da tela */
+        left: 50%;
+        /* Alinha o botão horizontalmente ao centro */
+        transform: translateX(-50%);
+        /* Centraliza o botão com base na sua largura */
+        background-color: #000;
+        /* Cor de fundo do botão */
+        color: #fff;
+        /* Cor do texto do botão */
+        padding: 10px 15px;
+        /* Padding do botão */
+        border-radius: 5px;
+        /* Arredondar as bordas do botão */
+        cursor: pointer;
+        z-index: 1000;
+        /* Garante que o botão fique por cima de outros elementos */
     }
 }
