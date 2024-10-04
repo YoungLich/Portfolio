@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function toggleMenu() {
+    const navContainer = document.getElementById('nav-container');
+    const menu = document.querySelector('.sub-menu');
+
+    // Alterna a classe 'pushed' no navContainer
+    navContainer.classList.toggle('pushed');
+
+    // Lógica para exibir ou ocultar o menu
+    if (menu) {
+        menu.classList.toggle('show');
+    }
+}
+
+
 $(document).ready(function () {
     $('#toggle-menu').click(function () {
         $('body').toggleClass('menu-open'); // Alterna a classe "menu-open" no body
@@ -32,3 +46,36 @@ $(document).ready(function () {
 
     typeName();
 });
+
+// Função para o botão de voltar ao topo
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Mostrar o botão quando rolar para baixo
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Ao clicar, rolar suavemente para o topo
+    backToTopButton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+});
+
+function startDigitalClock() {
+    const clock = document.getElementById('digitalClock');
+    setInterval(() => {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        clock.textContent = `${hours}:${minutes}:${seconds}`;
+    }, 1000);
+}
+
+// Iniciar o relógio assim que a página carregar
+window.onload = startDigitalClock;
