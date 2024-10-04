@@ -1,0 +1,90 @@
+main {
+    height: auto;
+    /* Permitir que o conteúdo defina a altura */
+}
+
+.container3 {
+    text-align: center;
+    margin: auto;
+}
+
+.formacao {
+    text-align: center;
+    /* Centraliza o conteúdo da Formação Acadêmica */
+    margin: 20px 0;
+    /* Adiciona margem acima e abaixo */
+}
+
+.diploma {
+    width: 400px;
+    /* Define a largura da imagem do diploma */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Faz a imagem ser um bloco, permitindo centralização */
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+.card_certificados {
+    display: flex;
+    /* Usa flexbox para dispor os certificados lado a lado */
+    flex-wrap: wrap;
+    /* Permite que os certificados se movam para a próxima linha se não houver espaço */
+    justify-content: center;
+    /* Centraliza os certificados no container */
+    margin: 20px 0;
+    /* Adiciona margem acima e abaixo da seção de certificados */
+    gap: 30px;
+}
+
+.certificado {
+    margin: 10px;
+    /* Espaçamento entre os certificados */
+    text-align: center;
+    /* Centraliza o texto dentro de cada certificado */
+    max-width: 250px;
+    /* Limita a largura máxima de cada certificado */
+    background: linear-gradient(to bottom, transparent, transparent, #6d6868);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid black;
+}
+
+.certificado-imagem {
+    width: 100%;
+    /* A imagem ocupará 100% da largura do container do certificado */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.link_certificado {
+    font-size: 16px;
+    display: inline-block;
+    /* Faz o link se comportar como um bloco para facilitar o clique */
+    margin-top: 5px;
+    margin-bottom: 2px;
+    /* Espaçamento acima do link */
+    color: #ffffff;
+    /* Cor do link */
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    transition: 0.2s ease;
+}
+
+.link_certificado:hover {
+    color: aquamarine;
+}
+
+
+.link_certificado svg {
+    margin-left: 5px;
+    /* Espaçamento entre o texto e o ícone */
+}
+
+.text1 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}

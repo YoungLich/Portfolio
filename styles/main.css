@@ -1,0 +1,192 @@
+/* main.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    background: #696868;
+    margin: 0;
+}
+
+header {
+    background: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg1 {
+    position: fixed;
+    /* Fixa a imagem em relação à viewport */
+    top: 0;
+    /* Posiciona no topo */
+    left: 0;
+    /* Posiciona à esquerda */
+    width: 100%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    object-fit: cover;
+    /* Cobre o espaço sem distorcer */
+    opacity: 0.5;
+    /* Ajuste a opacidade conforme necessário */
+    z-index: -1;
+    /* Coloca a imagem atrás de todos os outros elementos */
+}
+
+.main {
+    position: relative;
+    /* Necessário para garantir que os elementos do main estejam acima da imagem */
+    height: 440px;
+    /* Mantenha a altura ou ajuste conforme necessário */
+}
+
+footer {
+    background: #000000;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-icon {
+    display: none;
+    /* Ocultar por padrão */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Submenu */
+.sub-menu {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    margin-left: 450px;
+    padding: 0;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.sub-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para o menu quando ativo */
+body.active .sub-menu {
+    display: block;
+    /* Mostrar o menu quando ativo */
+}
+
+.gif {
+    margin-top: -400px;
+    margin-left: 750px;
+    width: 370px;
+    border-bottom: 7px solid rgb(20, 20, 20);
+    border-right: 7px solid rgb(20, 20, 20);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5%;
+}
+
+#name {
+    text-align: center;
+    margin: auto;
+}
+
+.subtitle {
+    text-align: center;
+    margin: auto;
+    color: rgb(160, 198, 248);
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 400px;
+    height: 300px;
+    /* Tamanho reduzido do container */
+    border-top: 7px solid rgb(20, 20, 20);
+    border-left: 7px solid rgb(20, 20, 20);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, transparent, transparent, #6d6868);
+    /* Fundo sutil */
+    padding: 20px;
+    /* Adicionando padding */
+}
+
+.link {
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(199, 51, 51);
+}
+
+/* Ajuste para as imagens de habilidades */
+.skills {
+    width: 40px;
+    /* Tamanho fixo para todas as imagens */
+    margin: 8px;
+    /* Espaçamento uniforme entre as imagens */
+}
+
+.skills-container {
+    margin-left: 10px;
+    display: flex;
+    /* Alinha as imagens em linha */
+    justify-content: center;
+    /* Centraliza as imagens */
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem para a próxima linha, se necessário */
+}
+
+.social-media-container {
+    display: flex;
+    /* Alinhando as imagens social media em linha */
+    justify-content: center;
+    /* Centralizando horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem para a próxima linha, se necessário */
+}
+
+.social-media {
+    border: none;
+
+    width: 50px;
+    /* Tamanho fixo para as imagens de social media */
+    margin: 5px;
+    /* Espaçamento entre as imagens */
+    transition: transform 0.2s;
+    /* Animação suave */
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.social-media:hover {
+    border-radius: 5px;
+    background-color: #bac8ce;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+    /* Aumenta o tamanho sutilmente no hover */
+}
+
+.text,
+.text1 {
+    color: blanchedalmond;
+    text-align: center;
+    margin: auto;
+}

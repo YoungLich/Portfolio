@@ -1,0 +1,108 @@
+main {
+    height: auto;
+    /* Ajusta a altura para o conteúdo */
+}
+
+.container4 {
+    text-align: center;
+    margin: auto;
+}
+
+.eu {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* Centraliza a imagem */
+    width: 250px;
+    border: 1px solid transparent;
+    border-radius: 200px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contat {
+    font-weight: 700;
+    color: #76c8f7;
+}
+
+.sobre_mim {
+    margin-top: 10px;
+    margin-left: 300px;
+    width: 700px;
+    height: auto;
+    margin-bottom: 50px;
+    /* Tamanho reduzido do container */
+    border-top: 7px solid rgb(20, 20, 20);
+    border-bottom: 7px solid rgb(20, 20, 20);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, transparent, transparent);
+    /* Fundo sutil */
+    padding: 20px;
+    /* Adicionando padding */
+}
+
+.sobre_mim h2 {
+    margin-top: 0;
+    /* Remove margem superior do h2 */
+    color: #ffffff;
+    /* Cor do título */
+
+    text-align: center;
+}
+
+.sobre_mim h3 {
+    color: #ffffff;
+    /* Cor dos subtítulos */
+    border-bottom: 1px solid #ccc;
+    /* Linha inferior para destacar */
+    padding-bottom: 5px;
+    /* Espaçamento */
+}
+
+.sobre_mim ul {
+    margin: 10px 0;
+    /* Margem para a lista */
+    padding-left: 20px;
+    /* Espaçamento à esquerda */
+}
+
+.sobre_mim a {
+    /* Cor dos links */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+.sobre_mim a:hover {
+    text-decoration: underline;
+    /* Sublinha ao passar o mouse */
+}
+
+.download-button {
+    text-align: center;
+    /* Centraliza o botão */
+    margin: 20px 0;
+    /* Espaçamento em cima e embaixo */
+}
+
+.download-button button {
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    background-color: #007BFF;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor para pointer */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    transition: background-color 0.3s;
+    /* Transição para o hover */
+}
+
+.download-button button:hover {
+    background-color: #0056b3;
+    /* Cor ao passar o mouse */
+}

@@ -1,138 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
-    <link id="theme-stylesheet" rel="stylesheet" href="css/style.css?v=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/responsive.css'>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/icon.ico">
-    <title>Portfólio | Gabriel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" type="image/icon" href="image/icon.ico" sizes="16px">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Portfólio | Gabriel Proença</title>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-
-    <header class="cabeçalho">
-
-        <div class="tit1">
-            <h1 class="title">Portfólio</h1>
-        </div>
+    <header>
         <nav>
-            <div class="list1">
-                <ul class="link">
-                    <li class="menu_lista"><a href="#Menu" class="menu_link">Menu</a></li>
-                    <li class="menu_lista"><a href="#Project" class="menu_link">Projetos</a></li>
-                    <li class="menu_lista"><a href="#Formation" class="menu_link">Formações</a></li>
-                    <li class="menu_lista"><a href="#Contato" class="menu_link">Contato</a></li>
-                </ul>
-            </div>
+            <div id="nav-container">
+                <div class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div><!-- /toggle-icon -->
+            </div><!-- /nav-container -->
+            <ul class="sub-menu">
+                <li><a href="index.html" class="link">Menu</a></li>
+                <li><a href="projects.html" class="link">Projetos</a></li>
+                <li><a href="licenses.html" class="link">Licenças e Certificados</a></li>
+                <li><a href="about.html" class="link">Sobre Mim</a></li>
+            </ul>
         </nav>
-
     </header>
 
-    <button id="theme-toggle">
-        <img src="./assets/image/Dark_Moon.png" id="dark-icon" class="theme-icon">
-        <img src="./assets/image/Light_Moon.png" id="light-icon" class="theme-icon" style="display: none;">
-    </button>
-
-    <!-- Principal -->
     <main class="main">
+        <div class="container">
+            <h1 id="name"></h1>
+            <h4 class="subtitle"><i>Desenvolvedor Python</i></h4>
+            <p class="text1">Skills and Competences</p>
+            <div class="skills-container">
+                <img src="image/python.png" class="skills">
+                <img src="image/Js.png" class="skills">
+                <img src="image/html.png" class="skills">
+                <img src="image/css.png" class="skills">
+            </div>
+            <p class="text1">Contact Me</p>
+            <div class="social-media-container">
 
-        <div class="tamanho">
-            <div class="relogio">
-                <div>
-                    <span id="horas">00</span><span>:</span>
-                </div>
-                <div>
-                    <span id="minutos">00</span><span>:</span>
-                </div>
-                <div>
-                    <span id="segundos">00</span>
-                </div>
+                <a href="https://github.com/YoungLich" target="_blank">
+                    <img src="image/github.png" class="social-media"></a>
+                <p>GitiHub</p>
+
+                <a href="https://www.instagram.com/gab_proenca/" target="_blank">
+                    <img src="image/instagram.png" class="social-media"></a>
+                <p>Instagram</p>
+
+                <a href="https://www.linkedin.com/in/gabriel-proencabr/" target="_blank">
+                    <img src="image/linkedin.png" class="social-media"></a>
+                <p>Linkedin</p>
+
+                <a href="https://api.whatsapp.com/send/?phone=%2B5511949919959&text&app_absent=0" target="_blank">
+                    <img src="image/Whatsapp.png" class="social-media"></a>
+                <p>Whatsapp</p>
+
             </div>
         </div>
-
-        <div class="container_title_texto">
-            <div class="title_texto">
-                <p class="title_texto_destaque">Olá, meu nome é</p>
-                <h2 class="title_texto_nome">Eduardo Gabriel Proença de Carvalho</h2>
-                <p class="title_texto_descricao">Bem-vindo à minha página!</p>
-            </div>
-        </div>
-
-        <section id="Menu">
-            <h1 class="title1">Sobre Mim</h1>
-            <div class="container">
-                <img src="./assets/image/I m.jpg" class="img1">
-                <h1 class="text1">Gabriel Proença</h1>
-                <p class="subtext">Análista e Desenvolvedor de Sistemas</p>
-                <p class="text2"> Olá, seja bem-vindo! Meu nome é Eduardo.
-                    Sou estudante de TI, formado em Análise e Desenvolvimento de
-                    Sistemas, estou cursando Ciência da Computação - 8° Semestre.
-                    Tenho habilidades básicas com desenvolvimento web,
-                    e utilizo linguagem de programação Python e JavaScript.
-                    Espero que gostem desse Portfólio.
-                </p>
-            </div>
-        </section>
-
-        <!-- Fim da 1 Section -->
-        <section id="Project">
-            <h1 class="title2">Projetos</h1>
-            <div class="container2">
-                <img src="./assets/image/tela_login.png" class="project1">
-                <a href="https://younglich.github.io/Login/" class="link1" target="_blank">Tela de Login</a>
-
-                <img src="./assets/image/galeria.png" class="project2">
-                <a href="https://younglich.github.io/GALLERY/" class="link2" target="_blank">Gallery</a>
-
-                <img src="./assets/image/gerador.png" class="project3">
-                <a href="https://github.com/YoungLich/Generate-Number" class="link3" target="_blank">Gerador</a>
-
-            </div>
-        </section>
-
-        <!-- Fim da 2 Section -->
-        <section id="Formation">
-            <div class="formations">
-                <h1 class="title3">Formação Acadêmica</h1>
-                <img src="./assets/image/Diploma.png" class="diploma">
-            </div>
-        </section>
-
-        <!-- Fim da 3 Section -->
-        <section id="Contato">
-            <h1 class="title4">Contatos</h1>
-            <div class="contatos">
-                <div class="container3">
-                    <a href="https://www.instagram.com/gab_proenca/" target="_blank">
-                        <img src="./assets/image/instagram.png" class="instagram"></a>
-                    <a href="https://www.linkedin.com/in/gabriel-proencabr/" target="_blank">
-                        <img src="./assets/image/linkedin.png" class="linkedin"></a>
-                    <a href="https://github.com/YoungLich" target="_blank">
-                        <img src="./assets/image/github.png" class="github"></a>
-                    <a href="https://api.whatsapp.com/send/?phone=%2B5511949919959&text&app_absent=0" target="_blank">
-                        <img src="./assets/image/Whatsapp.png" class="whatsapp"></a>
-                </div>
-            </div>
-        </section>
+        <img src="image/Avatar.gif" class="gif">
     </main>
+    <img src="image/Bg0.gif" class="bg1"> <!-- Mantenha esta linha -->
 
-    <button id="back-to-top">&#8634;</button>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <h1 class="title5">Desenvolvedor</h1>
-        <p class="text3">Copyrigth © 2024 | Desenvolvido by |
-            Eduardo Gabriel Proença de Carvalho</p>
-        <p class="text4">São Paulo | Brazil</p>
+    <footer>
+        <div class="text">
+            <p>&copy; 2024 | Eduardo Gabriel Proença de Carvalho</p>
+            <p>Todos os Direitos Reservados.</p>
+        </div>
     </footer>
-
-
-    <script src="./js/script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

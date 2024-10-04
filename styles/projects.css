@@ -1,0 +1,119 @@
+/* Ajuste do container principal */
+main {
+    height: 1500px;
+    /* Aumentei a altura para acomodar os 4 cards */
+}
+
+.container2 {
+    text-align: center;
+    margin: auto;
+}
+
+/* Ajustes gerais para centralizar e organizar os cards */
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, transparent, transparent, #6d6868);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+/* Ajuste das imagens do Card 3 e Card 4 */
+.front-images {
+    display: flex;
+    /* Adiciona flexbox para alinhar imagens lado a lado */
+    justify-content: center;
+    /* Centraliza as imagens horizontalmente */
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+}
+
+.front {
+    width: 80px;
+}
+
+/* Ajustes para os links do card 1 e 2 */
+.card1 .left-section,
+.card2 .left-section,
+.card3 .left-section,
+.card4 .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a {
+    width: auto;
+    padding: 8px 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Links de repositório */
+.projetos,
+.deploy {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+.projetos:hover,
+.deploy:hover {
+    background-color: #0056b3;
+}
+
+.tools {
+    width: 80px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+/* Estilo dos vídeos */
+.movie {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+    color: white;
+    width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

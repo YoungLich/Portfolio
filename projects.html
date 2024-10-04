@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" type="image/icon" href="image/icon.ico" sizes="16px">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Portfólio | Gabriel Proença</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="nav-container">
+                <div class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="sub-menu">
+                <li><a href="index.html" class="link">Menu</a></li>
+                <li><a href="projects.html" class="link">Projetos</a></li>
+                <li><a href="licenses.html" class="link">Licenças e Certificados</a></li>
+                <li><a href="about.html" class="link">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container2">
+            <h1>Projetos</h1>
+            <p>Sempre procurando evolução e inovação</p>
+        </div>
+
+        <!-- Layout dos cards -->
+        <div class="card-container">
+            <!-- CARD 1 -->
+            <div class="card card1">
+                <div class="left-section">
+                    <img src="image/python.png" class="tools" alt="Python logo">
+                    <h1>Pushnator</h1>
+                    <p>Pushnator: um projeto de automação de tarefas com python, criado
+                        durante o período de estágio na PGFN, o objetivo do software é
+                        entrar no site do PJE com username e senha, ler dados de uma planilha,
+                        incluir ou excluir processos, e por fim devolver outra planilha informando
+                        se os processos foram incluídos ou excluídos.</p>
+                    <a href="https://github.com/YoungLich/PUSHNATOR" target="_blank" class="projetos">Repository</a>
+                </div>
+                <div class="right-section">
+                    <video src="video/Pushnator.mp4" class="movie" controls></video>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card card2">
+                <div class="left-section">
+                    <img src="image/python.png" class="tools" alt="Python logo">
+                    <h1>Zapbot</h1>
+                    <p>Zapbot: um projeto de automação de tarefas com python, criado
+                        durante o período de estágio na PGFN, o objetivo do software é
+                        entrar automaticamente no whatsapp web, maniplando o browser com a biblioteca
+                        selenium do python, e enviar mensagens, fotos e arquivos automaticamente
+                        para mais de um contato.</p>
+                    <a href="https://github.com/YoungLich/ZAPBOT" target="_blank" class="projetos">Repository</a>
+                </div>
+                <div class="right-section">
+                    <video src="video/Zapbot.mp4" class="movie" controls></video>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card card3">
+                <div class="left-section">
+                    <div class="front-images">
+                        <img src="image/html.png" class="front" alt="HTML logo">
+                        <img src="image/css.png" class="front" alt="CSS logo">
+                        <img src="image/Js.png" class="front" alt="JS logo">
+                    </div>
+                    <h1>Gallery</h1>
+                    <p>Gallery: é uma página web, com um carrousel feito com HTML, CSS e JavaScript
+                        para baixar mais de 40 Wallpapers para desktop, foi criado durante o período da
+                        faculdade de Análise e Desenvolvimento de Sistemas.</p>
+                    <a href="https://github.com/YoungLich/GALLERY" target="_blank" class="projetos">Repository</a>
+                    <a href="https://younglich.github.io/GALLERY/" target="_blank" class="deploy">Deploy</a>
+                </div>
+                <div class="right-section">
+                    <video src="video/Gallery.mp4" class="movie" controls></video>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card card4">
+                <div class="left-section">
+                    <div class="front-images">
+                        <img src="image/html.png" class="front" alt="HTML logo">
+                        <img src="image/css.png" class="front" alt="CSS logo">
+                        <img src="image/Js.png" class="front" alt="JS logo">
+                    </div>
+                    <h1>Search Machine</h1>
+                    <p>Search Machine: é um projeto feito durante a imersão dev
+                        da alura com o google gemini, onde criamos um projeto com html, css e uma base de dados
+                        em JavaScript para pesquisa de vários tipos de assuntos e orientação a objetos.
+                    </p>
+                    <a href="https://github.com/YoungLich/Search-Machine" target="_blank"
+                        class="projetos">Repository</a>
+                    <a href="https://search-machines.vercel.app/" target="_blank" class="deploy">Deploy</a>
+                </div>
+                <div class="right-section">
+                    <video src="video/Search.mp4" class="movie" controls></video>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <img src="image/Bg1.gif" class="bg1" alt="Background gif">
+
+    <footer>
+        <div class="text">
+            <p>&copy; 2024 | Eduardo Gabriel Proença de Carvalho</p>
+            <p>Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
