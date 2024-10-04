@@ -1,7 +1,20 @@
 // main.js
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleIcon = document.querySelector('.toggle-icon');
+    const subMenu = document.querySelector('.sub-menu');
+    const header = document.querySelector('header');
+
+    toggleIcon.addEventListener('click', function () {
+        subMenu.classList.toggle('show');
+        header.classList.toggle('pushed'); // Adiciona ou remove a classe 'pushed'
+    });
+});
+
 $(document).ready(function () {
     $('#toggle-menu').click(function () {
-        $('#menu').toggleClass('active'); // Adiciona ou remove a classe "active"
+        $('body').toggleClass('menu-open'); // Alterna a classe "menu-open" no body
+        $(this).toggleClass('active'); // Adiciona uma classe 'active' para o toggle
+        $('.sub-menu').toggleClass('show'); // Adiciona a classe 'show' ao menu
     });
 
     // Efeito de máquina de escrever
