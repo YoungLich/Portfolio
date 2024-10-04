@@ -1,22 +1,4 @@
-/* Para telas maiores - o relógio à esquerda */
-@media (min-width: 769px) {
-  #nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  #digitalClock {
-    order: 1;
-    margin-right: auto;
-  }
-
-  .toggle-icon {
-    order: 2;
-    margin-left: auto;
-  }
-}
+/* responsive.css */
 
 @media (max-width: 768px) {
   header {
@@ -24,8 +6,6 @@
     /* Fundo transparente inicialmente */
     transition: background 0.3s ease;
     /* Adiciona uma transição suave para a mudança de cor */
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   body {
@@ -35,24 +15,12 @@
     /* Aumente para escalar o toggle-icon */
   }
 
-  .container.shift {
-    margin-top: 150px;
-    /* Ajuste este valor conforme necessário */
-    transition: margin-top 0.3s ease;
-    /* Transição suave para o deslocamento */
-  }
-
-  #digitalClock {
-    font-size: 20px;
-    padding: 8px 15px;
-    order: 2;
-    margin-top: 10px;
-    margin-right: 0;
-  }
-
   #nav-container {
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 20px;
+    /* Alinhado ao topo */
+    left: 20px;
+    /* Alinhado à esquerda */
   }
 
   /* Toggle-icon */
@@ -75,40 +43,21 @@
     transition: transform 0.3s ease;
   }
 
-  /* CSS existente para o pushed */
-  .pushed {
-    margin-top: 10px;
-    /* Ajuste este valor conforme necessário */
-  }
-
-  .container {
-    margin-top: 0;
-    /* Reset para garantir que não haja margem por padrão */
-    transition: margin-top 0.3s ease;
-    /* Suaviza a animação da margem */
-  }
-
-  .container {
-    transition: margin-top 0.3s ease;
-    /* Transição suave para o deslocamento */
-  }
-
-  .pushed .container {
-    margin-top: 150px;
-    /* Espaço criado para não sobrepor o cabeçalho */
-  }
-
   /* Exibir o menu apenas para telas pequenas */
   .sub-menu {
     display: none;
+    /* Oculta a lista por padrão */
     list-style-type: none;
+    /* Remove a marcação da lista */
     padding: 0;
+    /* Remove o padding */
+    text-align: center;
+    /* Centraliza os links */
+    margin-left: 1px;
+    margin-top: 20px;
+    /* Remove margem para centralizar */
+    border: 1px solid black;
     background-color: black;
-    position: absolute;
-    top: 10px;
-    /* Ajuste conforme necessário */
-    right: 130px;
-    /* Ajuste conforme necessário */
   }
 
   .sub-menu.show {
@@ -168,12 +117,6 @@
     gap: 20px;
     /* Reduz o espaço entre as imagens */
   }
-
-  #digitalClock {
-    font-size: 18px;
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -185,11 +128,6 @@
     padding: 10px;
     max-width: calc(100% - 6px);
     /* Calcula 100% menos 6px para dar margem de 3px de cada lado */
-  }
-
-  #digitalClock {
-    font-size: 18px;
-    padding: 6px 10px;
   }
 
   /* Reduz ainda mais o tamanho das imagens para dispositivos móveis */
@@ -212,11 +150,5 @@
     /* Limita o tamanho máximo do GIF */
     margin: 20px auto;
     /* Centraliza o GIF e adiciona espaço entre ele e o container */
-  }
-
-  #backToTop {
-    bottom: 10px;
-    right: 10px;
-    padding: 8px;
   }
 }
