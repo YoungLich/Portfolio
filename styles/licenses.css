@@ -88,3 +88,21 @@ main {
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card_certificados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificado {
+        max-width: 90%;
+        /* Reduz a largura dos certificados em telas menores */
+    }
+
+    .diploma {
+        width: 90%;
+        /* Ajusta a largura do diploma em telas menores */
+    }
+}

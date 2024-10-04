@@ -26,7 +26,10 @@ main {
 
 .sobre_mim {
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: auto;
+    /* Alterado para centralizar */
+    margin-right: auto;
+    /* Alterado para centralizar */
     width: 700px;
     height: auto;
     margin-bottom: 50px;
@@ -105,4 +108,86 @@ main {
 .download-button button:hover {
     background-color: #0056b3;
     /* Cor ao passar o mouse */
+}
+
+/* Estilo geral para telas menores */
+@media (max-width: 768px) {
+    .sub-menu {
+        display: none;
+        /* Esconde o menu padrão em telas menores */
+        position: absolute;
+        /* Para criar uma caixinha */
+        background: white;
+        /* Cor de fundo da caixinha */
+        border: 1px solid #ccc;
+        /* Borda da caixinha */
+        z-index: 10;
+        /* Certifique-se de que está acima de outros elementos */
+        width: 100%;
+        /* Largura total da caixinha */
+    }
+
+    #toggle-menu {
+        display: block;
+        /* Exibe o hamburger em telas menores */
+    }
+
+    #menu.active {
+        display: block;
+        /* Exibe o menu quando ativo */
+    }
+
+    .container4 {
+        margin: 0 auto;
+        /* Centraliza o container */
+        padding: 0 20px;
+        /* Adiciona um pouco de padding lateral */
+    }
+
+    .sobre_mim {
+        margin: 20px auto;
+        /* Centraliza o conteúdo e adiciona margem */
+        width: 90%;
+        /* Ajusta a largura para 90% da tela */
+        padding: 15px;
+        /* Adiciona padding interno */
+    }
+
+    .eu {
+        width: 200px;
+        /* Ajusta a largura da imagem */
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 1.2em;
+        /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .download-button button {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+/* Para telas menores que 420px */
+@media (max-width: 420px) {
+    .eu {
+        width: 150px;
+        /* Ajusta a largura da imagem para telas menores */
+    }
+
+    .sobre_mim {
+        margin: 10px auto;
+        /* Reduz a margem do container */
+        width: 95%;
+        /* Aumenta a largura do container */
+    }
+
+    .download-button button {
+        width: 100%;
+        /* Faz o botão ocupar toda a largura disponível */
+    }
 }

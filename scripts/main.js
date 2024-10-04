@@ -1,8 +1,7 @@
 // main.js
 $(document).ready(function () {
-    $(".toggle-icon").click(function () {
-        $('#nav-container').toggleClass("pushed");
-        $('.sub-menu').toggleClass("show"); // Adiciona/remover a classe 'show' da lista
+    $('#toggle-menu').click(function () {
+        $('#menu').toggleClass('active'); // Adiciona ou remove a classe "active"
     });
 
     // Efeito de máquina de escrever

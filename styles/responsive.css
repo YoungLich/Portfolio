@@ -72,3 +72,65 @@
     /* Rotaciona a terceira barra */
   }
 }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .main {
+    height: 750px;
+  }
+
+  .container {
+    margin-right: 100px;
+    /* Mantém o container centralizado */
+    padding: 15px;
+    width: 320px;
+    height: 250px;
+    /* Margem de 5% para manter o container distante das bordas */
+  }
+
+  /* Reduz o tamanho das imagens um pouco mais para telas médias */
+  .skills,
+  .social-media {
+    width: 40px;
+  }
+
+  .skills-container,
+  .social-media-container {
+    gap: 20px;
+    /* Reduz o espaço entre as imagens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* Ajuste para telas pequenas */
+  .container {
+    margin: 80px 3px;
+    /* 3px de margem lateral */
+    padding: 10px;
+    max-width: calc(100% - 6px);
+    /* Calcula 100% menos 6px para dar margem de 3px de cada lado */
+  }
+
+  /* Reduz ainda mais o tamanho das imagens para dispositivos móveis */
+  .skills,
+  .social-media {
+    width: 30px;
+  }
+
+  .skills-container,
+  .social-media-container {
+    gap: 5px;
+    /* Menor espaçamento entre as imagens */
+  }
+}
+
+/* Ajustes para o GIF */
+.gif {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  /* Limita o tamanho máximo do GIF */
+  margin: 20px auto;
+  /* Centraliza o GIF e adiciona espaço entre ele e o container */
+}

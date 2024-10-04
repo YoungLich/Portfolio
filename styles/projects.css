@@ -1,6 +1,6 @@
 /* Ajuste do container principal */
 main {
-    height: 1500px;
+    height: 2750px;
     /* Aumentei a altura para acomodar os 4 cards */
 }
 
@@ -107,13 +107,55 @@ footer {
     width: 100%;
 }
 
-/* Responsivo */
+/* Ajustes responsivos para telas menores */
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .card {
+        width: 90%;
+        /* Aumenta a largura do card em telas menores */
+        margin-bottom: 20px;
+        /* Espaçamento entre os cards */
+        display: flex;
+        flex-direction: column;
+        /* Coloca a imagem acima do texto */
+        align-items: center;
+        /* Centraliza o conteúdo do card */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .tools {
+        width: 50%;
+        /* Ajusta a largura da imagem do logo */
+        margin: 0 auto;
+        /* Centraliza a imagem */
+    }
+
+    .front {
+        width: 30%;
+        /* Ajusta a largura das imagens front */
+        margin: 5px;
+        /* Margem entre as imagens */
+    }
+
+    .movie {
         width: 100%;
+        /* Ajusta a largura do vídeo */
+        margin-top: 10px;
+        /* Espaçamento acima do vídeo */
+    }
+
+    .projetos,
+    .deploy {
+        margin-top: 10px;
+        /* Espaçamento entre os links */
+        display: inline-block;
+        /* Para garantir que o espaçamento funcione corretamente */
     }
 }
