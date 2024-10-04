@@ -60,6 +60,10 @@
     background-color: black;
   }
 
+  .link {
+    font-size: 20px;
+  }
+
   .sub-menu.show {
     display: block;
     /* Exibe a lista quando a classe 'show' é adicionada */
