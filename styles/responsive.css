@@ -123,14 +123,14 @@
     gap: 5px;
     /* Menor espaçamento entre as imagens */
   }
-}
 
-/* Ajustes para o GIF */
-.gif {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  /* Limita o tamanho máximo do GIF */
-  margin: 20px auto;
-  /* Centraliza o GIF e adiciona espaço entre ele e o container */
+  /* Ajustes para o GIF */
+  .gif {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    /* Limita o tamanho máximo do GIF */
+    margin: 20px auto;
+    /* Centraliza o GIF e adiciona espaço entre ele e o container */
+  }
 }

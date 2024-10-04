@@ -1,6 +1,6 @@
 /* Ajuste do container principal */
 main {
-    height: 2750px;
+    height: 1600px;
     /* Aumentei a altura para acomodar os 4 cards */
 }
 
@@ -109,6 +109,11 @@ footer {
 
 /* Ajustes responsivos para telas menores */
 @media (max-width: 768px) {
+    main {
+        height: 2750px;
+        /* Aumentei a altura para acomodar os 4 cards */
+    }
+
     .card-container {
         display: flex;
         flex-direction: column;
