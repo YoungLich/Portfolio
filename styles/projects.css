@@ -114,6 +114,10 @@ footer {
         /* Aumentei a altura para acomodar os 4 cards */
     }
 
+    .espaço {
+        margin-top: 60px;
+    }
+
     .card-container {
         display: flex;
         flex-direction: column;

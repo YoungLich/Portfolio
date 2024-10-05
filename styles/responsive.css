@@ -10,9 +10,15 @@
 
   body {
     background: #222;
-    padding: 20px;
+    padding: 0px;
     font-size: 10px;
     /* Aumente para escalar o toggle-icon */
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 
   #nav-container {
@@ -26,6 +32,8 @@
   /* Toggle-icon */
   .toggle-icon {
     display: block;
+    margin-left: 5px;
+    margin-top: 15px;
     width: 40px;
     /* Ajuste o tamanho conforme necessário */
     cursor: pointer;
@@ -53,8 +61,8 @@
     /* Remove o padding */
     text-align: center;
     /* Centraliza os links */
-    margin-left: 1px;
-    margin-top: 20px;
+    margin-left: 5px;
+    margin-top: 60px;
     /* Remove margem para centralizar */
     border: 1px solid black;
     background-color: black;
@@ -102,11 +110,10 @@
   }
 
   .container {
-    margin-right: 100px;
+    margin-left: 90px;
     /* Mantém o container centralizado */
-    padding: 15px;
-    width: 320px;
-    height: 250px;
+    width: 340px;
+    height: 280px;
     /* Margem de 5% para manter o container distante das bordas */
   }
 
@@ -120,6 +127,22 @@
   .social-media-container {
     gap: 20px;
     /* Reduz o espaço entre as imagens */
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 60%;
+    display: none;
+    /* Inicialmente oculto */
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.8s ease;
   }
 }
 

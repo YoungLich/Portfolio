@@ -112,6 +112,12 @@ main {
 
 /* Estilo geral para telas menores */
 @media (max-width: 768px) {
+    main {
+        max-height: 1600px;
+        min-height: 800px;
+
+    }
+
     #toggle-menu {
         display: block;
         /* Exibe o hamburger em telas menores */
@@ -122,11 +128,15 @@ main {
         /* Exibe o menu quando ativo */
     }
 
+    .total {
+        margin-top: 70px;
+    }
+
     .container4 {
-        margin: 0 auto;
+        margin-top: 100px;
+        margin: auto;
+        padding: 0;
         /* Centraliza o container */
-        padding: 0 20px;
-        /* Adiciona um pouco de padding lateral */
     }
 
     .sobre_mim {

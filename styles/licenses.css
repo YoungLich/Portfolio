@@ -91,6 +91,10 @@ main {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .formacao {
+        margin-top: 80px;
+    }
+
     .card_certificados {
         flex-direction: column;
         align-items: center;
