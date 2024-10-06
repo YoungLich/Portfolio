@@ -168,3 +168,9 @@ footer {
         /* Para garantir que o espaçamento funcione corretamente */
     }
 }
+
+@media (max-width: 420px) {
+    .text {
+        margin-left: 50px;
+    }
+}
