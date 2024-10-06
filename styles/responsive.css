@@ -12,6 +12,7 @@
     background: #222;
     padding: 0px;
     font-size: 10px;
+    max-width: 768px;
     /* Aumente para escalar o toggle-icon */
   }
 
@@ -110,7 +111,7 @@
   }
 
   .container {
-    margin-left: 90px;
+    margin-left: 120px;
     /* Mantém o container centralizado */
     width: 340px;
     height: 280px;
@@ -120,7 +121,11 @@
   /* Reduz o tamanho das imagens um pouco mais para telas médias */
   .skills,
   .social-media {
-    width: 40px;
+    width: 80px;
+  }
+
+  .social-media {
+    width: 125px;
   }
 
   .skills-container,
@@ -148,9 +153,15 @@
 
 @media screen and (max-width: 480px) {
 
+  main {
+    min-height: 800px;
+  }
+
   /* Ajuste para telas pequenas */
   .container {
-    margin: 80px 3px;
+    height: 345px;
+    margin: 90px 3px;
+    margin-left: 20px;
     /* 3px de margem lateral */
     padding: 10px;
     max-width: calc(100% - 6px);
@@ -160,11 +171,12 @@
   /* Reduz ainda mais o tamanho das imagens para dispositivos móveis */
   .skills,
   .social-media {
-    width: 30px;
+    width: 50px;
   }
 
   .skills-container,
   .social-media-container {
+    margin-top: 10px;
     gap: 5px;
     /* Menor espaçamento entre as imagens */
   }
@@ -177,5 +189,15 @@
     /* Limita o tamanho máximo do GIF */
     margin: 20px auto;
     /* Centraliza o GIF e adiciona espaço entre ele e o container */
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
   }
 }

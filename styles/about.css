@@ -177,12 +177,12 @@ main {
     .sobre_mim {
         margin: 10px auto;
         /* Reduz a margem do container */
-        width: 95%;
+        width: 80%;
         /* Aumenta a largura do container */
     }
 
     .download-button button {
-        width: 100%;
+        width: 90%;
         /* Faz o botão ocupar toda a largura disponível */
     }
 }
