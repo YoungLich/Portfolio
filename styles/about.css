@@ -169,10 +169,6 @@ main {
 
 /* Para telas menores que 420px */
 @media (max-width: 480px) {
-    .text {
-        width: 80%
-    }
-
     .eu {
         width: 150px;
         /* Ajusta a largura da imagem para telas menores */

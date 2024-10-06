@@ -151,56 +151,80 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 
   main {
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
+    /* O main agora ocupará a altura total, descontando o tamanho do footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 20px;
+    /* Margem superior do main para dar espaço antes dos elementos */
   }
 
-  /* Ajuste para telas pequenas */
+  .sub-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 100px;
+  }
+
   .container {
-    height: 330px;
-    width: 330px;
-    margin: 90px 3px;
-    margin-left: 25px;
-    /* 3px de margem lateral */
-    padding: 10px;
-    max-width: calc(100% - 6px);
-    /* Calcula 100% menos 6px para dar margem de 3px de cada lado */
+    height: 300px;
+    width: 100%;
+    max-width: 270px;
+    margin: 150px auto 0;
+    /* Adiciona uma margem superior maior */
   }
 
-  /* Reduz ainda mais o tamanho das imagens para dispositivos móveis */
   .skills,
   .social-media {
-    width: 40px;
+    width: 30px;
   }
 
   .skills-container,
   .social-media-container {
     margin-top: 10px;
     gap: 5px;
-    /* Menor espaçamento entre as imagens */
+    display: flex;
+    justify-content: center;
   }
 
-  /* Ajustes para o GIF */
   .gif {
     display: block;
     width: 100%;
     max-width: 300px;
-    /* Limita o tamanho máximo do GIF */
     margin: 20px auto;
-    /* Centraliza o GIF e adiciona espaço entre ele e o container */
-    margin-left: 60px;
+    margin-bottom: 90px;
   }
 
   .text {
-    font-size: 15px;
-    margin-left: 30px;
+    font-size: 14px;
+    text-align: center;
   }
 
   #backToTop {
     position: fixed;
     bottom: 90px;
-    right: 40px;
+    right: 20px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    /* Cor de fundo do footer */
+    position: relative;
+    /* Pode ser alterado para sticky ou fixed conforme a necessidade */
+    bottom: 0;
   }
 }
