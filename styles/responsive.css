@@ -1,7 +1,7 @@
 /* Para telas grandes até 2440px de largura */
-@media (min-width: 1361px) and (max-width: 2440px) {
+@media (max-width: 1980px) {
   body {
-    max-width: 2440px;
+    max-width: 1980px;
     margin: 0 auto;
     padding: 0;
     background-size: cover;
@@ -12,14 +12,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
-    margin: 0 auto;
+    min-height: 100vh;
+    margin: 0; /* Remove margens */
   }
 
   .container {
-    width: 600px;
+    width: 550px;
+    height: 200px;
     height: auto;
-    margin: 0 auto;
+    margin-left: -650px;
+    margin-top: -50px;
+    
   }
 
   .skills-container,
@@ -29,24 +32,28 @@
 
   .skills,
   .social-media {
-    width: 100px;
+    width: 60px;
     height: auto;
   }
 
   .gif {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 500px;
+    margin-left: 550px;
+    margin-top: -450px;
   }
 
   header {
-    width: 100%;
-    text-align: center;
+    height: 60px;
   }
 
-  footer {
+  header, footer {
     width: 100%;
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
     text-align: center;
-    padding: 20px 0;
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
   }
 }
 
