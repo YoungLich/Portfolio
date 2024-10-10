@@ -1,7 +1,8 @@
 /* Para telas grandes até 2440px de largura */
-@media (min-width: 1920px) {
+@media (min-width: 1980px) {
   body {
     max-width: 1920px;
+    max-width: 1980px;
     margin: 0 auto;
     padding: 0;
     background-size: cover;
@@ -12,14 +13,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
-    margin: 0 auto;
+    min-height: 100vh;
+    margin: 0;
+    /* Remove margens */
   }
 
   .container {
-    width: 600px;
+    width: 550px;
+    height: 200px;
     height: auto;
-    margin: 0 auto;
+    margin-left: -650px;
+    margin-top: -50px;
+
   }
 
   .skills-container,
@@ -29,24 +34,34 @@
 
   .skills,
   .social-media {
-    width: 100px;
+    width: 60px;
     height: auto;
   }
 
   .gif {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 500px;
+    margin-left: 550px;
+    margin-top: -450px;
   }
 
   header {
-    width: 100%;
-    text-align: center;
+    height: 60px;
   }
 
+  header,
   footer {
     width: 100%;
+    margin: 0;
+    /* Remove margens */
+    padding: 0;
+    /* Remove padding */
     text-align: center;
-    padding: 20px 0;
+    display: flex;
+    /* Usar flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
   }
 }
 
@@ -117,6 +132,8 @@
     /* Remove margem para centralizar */
     border: 1px solid black;
     background-color: black;
+    transition: max-height 0.5s ease-out;
+    /* Animação suave */
   }
 
   .link {
@@ -161,7 +178,7 @@
   }
 
   .container {
-    margin-left: 120px;
+    margin-left: 90px;
     /* Mantém o container centralizado */
     width: 340px;
     height: 280px;
@@ -256,6 +273,7 @@
     max-width: 300px;
     margin: 20px auto;
     margin-bottom: 90px;
+    margin-top: 60px;
   }
 
   .text {
@@ -274,7 +292,6 @@
   footer {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
     /* Cor de fundo do footer */
     position: relative;
     /* Pode ser alterado para sticky ou fixed conforme a necessidade */
