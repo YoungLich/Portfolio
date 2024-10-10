@@ -225,10 +225,13 @@
     padding: 0;
   }
 
+  .main {
+    height: 750px;
+  }
+
   main {
     /* O main ocupará a altura total da viewport */
     min-height: 100vh;
-    max-height: 150vh;
     /* O main agora ocupará a altura total, descontando o tamanho do footer */
     display: flex;
     flex-direction: column;
@@ -252,6 +255,7 @@
     width: 100%;
     max-width: 270px;
     margin: 150px auto 0;
+    margin-top: 60px;
     /* Adiciona uma margem superior maior */
   }
 
